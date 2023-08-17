@@ -1,0 +1,55 @@
+.app {
+  height: 100vh;
+  display: flex;
+  gap: 8vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  background-color: #282c34;
+}
+
+.app > * {
+  width: min(400px, 100%);
+}
+
+.app header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+.app header img:first-child {
+  width: min(250px, 50vw);
+  filter: drop-shadow(6px 10px 4px rgba(0,0,0,.2));
+}
+.app header img:last-child {
+  width: 100%;
+}
+
+.app section {
+  border-top: 1px solid #44b2c2;
+  padding-top: 4vh;
+}
+.app section h1 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #fff;
+  font-family: sans-serif;
+  margin-bottom: 5vh;
+}
+.app section h1 span {
+  display: block
+}
+
+
+@media (max-width: 767px) {
+  .app header img:last-child {
+    width: 60%;
+  }
+  .app section h1 {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
