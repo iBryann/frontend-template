@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useState } from 'react';
 
 import 'styles/app.css';
@@ -8,8 +7,6 @@ import { Button } from 'components';
 
 export const App = () => {
   const [count, setCount] = useState(0);
-
-  console.info(process.env);
 
   return (
     <main className='app'>
